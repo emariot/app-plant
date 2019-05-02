@@ -86,7 +86,7 @@ export default class Input extends Component {
       : "default";
 
     return (
-      <Block flex={false} margin={[theme.sizes.base, 0]}>
+      <Block flex={false} margin={[theme.sizes.base / 2, 0]}>
         {this.renderLabel()}
         <TextInput
           style={inputStyles}

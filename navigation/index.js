@@ -7,7 +7,7 @@ import Login from "../screens/Login";
 import SignUp from "../screens/SignUp";
 import Forgot from "../screens/Forgot";
 // import Explore from "../screens/Explore";
-// import Browse from "../screens/Browse";
+import Browse from "../screens/Browse";
 // import Product from "../screens/Product";
 // import Settings from "../screens/Settings";
 
@@ -18,25 +18,25 @@ const screens = createStackNavigator(
     Welcome,
     Login,
     SignUp,
-    Forgot
+    Forgot,
     // Explore,
-    // Browse,
+    Browse
     // Product,
     // Settings,
   },
   {
     defaultNavigationOptions: {
       headerStyle: {
-        height: theme.sizes.base * 4,
-        backgroundColor: theme.colors.white,
+        height: theme.sizes.base * 3,
+        backgroundColor: theme.colors.white, // or 'white
         borderBottomColor: "transparent",
-        elevation: 0 //for android
+        elevation: 0 // for android
       },
       headerBackImage: <Image source={require("../assets/icons/back.png")} />,
       headerBackTitle: null,
       headerLeftContainerStyle: {
         alignItems: "center",
-        marginLeft: theme.sizes.base * 2,
+        marginLeft: theme.sizes.base,
         paddingRight: theme.sizes.base
       },
       headerRightContainerStyle: {
